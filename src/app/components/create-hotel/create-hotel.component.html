@@ -1,0 +1,82 @@
+<!-- src/app/components/create-hotel/create-hotel.component.html -->
+<div class="container">
+  <div class="order-box-header">
+    <div class="header-title">
+      <a routerLink="/hotels" class="back-link">
+        <div class="arrow-left">
+          <div class="vector"></div>
+          <div class="vector"></div>
+        </div>
+      </a>
+      <h2>Créer un nouveau hôtel</h2>
+    </div>
+  </div>
+
+  <form [formGroup]="hotelForm" (ngSubmit)="onSubmit()">
+    <div class="form-row">
+      <div class="form-group">
+        <label>Nom</label>
+        <input type="text" formControlName="name" placeholder="Entrez le nom">
+        <div *ngIf="hotelForm.get('name')?.invalid && hotelForm.get('name')?.touched" class="error">
+          Le nom est requis
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" formControlName="email" placeholder="Entrez l'email">
+        <div *ngIf="hotelForm.get('email')?.invalid && hotelForm.get('email')?.touched" class="error">
+          Email invalide
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Prix par nuit</label>
+        <input type="number" formControlName="pricePerNight" placeholder="Entrez le prix">
+        <div *ngIf="hotelForm.get('pricePerNight')?.invalid && hotelForm.get('pricePerNight')?.touched" class="error">
+          Prix invalide (min 1)
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Devise</label>
+        <select formControlName="currency">
+          <option value="" disabled>Sélectionnez une devise</option>
+          <option *ngFor="let currency of currencies" [value]="currency">{{currency}}</option>
+        </select>
+        <div *ngIf="hotelForm.get('currency')?.invalid && hotelForm.get('currency')?.touched" class="error">
+          Devise requise
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Adresse</label>
+        <input type="text" formControlName="address" placeholder="Entrez l'adresse">
+        <div *ngIf="hotelForm.get('address')?.invalid && hotelForm.get('address')?.touched" class="error">
+          Adresse requise
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Téléphone</label>
+        <input type="text" formControlName="phoneNumber" placeholder="Format: +212 600000000">
+        <div *ngIf="hotelForm.get('phoneNumber')?.invalid && hotelForm.get('phoneNumber')?.touched" class="error">
+          Format invalide (8-15 chiffres)
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group full-width image-upload">
+      <label>Ajouter une photo</label>
+      <div class="upload-container">
+        <input type="file" (change)="onImageChange($event)" accept="image/*">
+        <div *ngIf="imagePreview" class="image-preview">
+          <img [src]="imagePreview" alt="Preview">
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" class="submit-btn" [disabled]="!hotelForm.valid">SUBMIT</button>
+  </form>
+</div>  
