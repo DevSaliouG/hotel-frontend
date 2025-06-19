@@ -1,19 +1,13 @@
 {
-  "version": 2,
-  "builds": [
+  "outputDirectory": "dist/client",
+  "framework": null,
+  "buildCommand": "npm run build",
+  "rewrites": [
     {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist/client"
-      }
+      "source": "/api/(.*)",
+      "destination": "https://hotel-backend-pely.onrender.com/api/$1"
     }
   ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/index.html" }
-  ],
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
-  
+  "cleanUrls": true,
+  "trailingSlash": false
 }
