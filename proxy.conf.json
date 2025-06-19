@@ -1,0 +1,7 @@
+{
+  "/api": {
+    "target": "https://hotel-backend-pely.onrender.com",
+    "secure": false,
+    "changeOrigin": true
+  }
+}
