@@ -14,7 +14,7 @@
           "builder": "@angular/build:application",
           "options": {
             "outputPath": "dist/client",
-            "baseHref": "/",
+            "baseHref": "./",
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
