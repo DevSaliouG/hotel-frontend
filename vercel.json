@@ -5,9 +5,10 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "https://hotel-backend-pely.onrender.com/api/$1"
-    }
-  ],
-  "cleanUrls": true,
+      "destination": "https://hotel-backend-pely.onrender.com/api/$1",
+       "cleanUrls": true,
   "trailingSlash": false
+    }
+  ]
+ 
 }
