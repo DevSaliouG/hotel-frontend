@@ -1,4 +1,8 @@
 node_modules
-dist
-.angular
+src/**/*.spec.ts
+dist/
+e2e/
+.angular/
+.vscode/
+README.md
 .env
