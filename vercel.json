@@ -16,8 +16,5 @@
       "src": "/(.*)",
       "dest": "/dist/client/index.html"
     }
-  ],
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
