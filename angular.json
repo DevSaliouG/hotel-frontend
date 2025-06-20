@@ -13,9 +13,6 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "baseHref": "./",
-            "deployUrl": "/",
-            "outputPath": "dist/client",
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [

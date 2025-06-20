@@ -3,14 +3,13 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Hotel } from '../models/hotel.model';
 import { Observable, catchError, throwError } from 'rxjs';
-import { environment } from "../../environments/environment.prod";
 
 @Injectable({
   providedIn: 'root'
 })
 export class HotelService {
  // private apiUrl = 'http://localhost:3000/api/hotels';
- private apiUrl = `${environment.apiUrl}/api/hotels`;
+ private apiUrl = 'https://hotel-backend-pely.onrender.com/api/hotels';
   
 
   constructor(private http: HttpClient) { }

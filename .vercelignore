@@ -1,8 +1,0 @@
-node_modules
-src/**/*.spec.ts
-dist/
-e2e/
-.angular/
-.vscode/
-README.md
-.env
