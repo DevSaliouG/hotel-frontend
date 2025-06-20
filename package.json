@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "postbuild": "cp vercel.json dist/client/vercel.json",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
     
