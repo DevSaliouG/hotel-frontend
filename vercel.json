@@ -7,9 +7,18 @@
     }
   ],
   "routes": [
+     {
+      "src": "/api/(.*)",
+      "dest": "https://hotel-backend-pely.onrender.com/api/$1"
+    },
     {
-      "src": "/(.*)",
-      "dest": "/dist/index.html"
+      "src": "/.*",
+      "dest": "/index.html",
+      "status": 200
     }
-  ]
+  ],
+
+  
+  "debug": true
+
 }
