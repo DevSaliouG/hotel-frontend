@@ -1,0 +1,17 @@
+# Ignorer tout par défaut
+*
+
+# Autoriser les fichiers nécessaires pour le build
+!/package.json
+!/package-lock.json
+!/angular.json
+!/tsconfig.json
+!/src
+!/node_modules
+
+# Configurations spécifiques Angular
+!/.browserslistrc
+!/karma.conf.js
+
+# Fichiers statiques (si nécessaire)
+!/assets
