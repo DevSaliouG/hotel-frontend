@@ -1,13 +1,15 @@
 {
-  "outputDirectory": "dist/client",
-  "framework": null,
-  "buildCommand": "npm run build",
-  "rewrites": [
+  "version": 2,
+  "builds": [
     {
-      "source": "/api/(.*)",
-      "destination": "https://hotel-backend-pely.onrender.com/api/$1",
-  "trailingSlash": false
+      "src": "dist/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/dist/index.html"
     }
   ]
- 
 }
