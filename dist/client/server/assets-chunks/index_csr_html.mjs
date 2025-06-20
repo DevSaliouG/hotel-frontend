@@ -11,6 +11,6 @@ export default `<html lang="fr" data-beasties-container="">
 <body ngcm="">
   <app-root></app-root>
  
-<script src="main-A3HNRDI5.js" type="module"></script></body>
+<script src="main-GTFBNEX7.js" type="module"></script></body>
 </html>
 `;

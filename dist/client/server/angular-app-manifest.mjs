@@ -30,11 +30,11 @@ export default {
 ],
   entryPointToBrowserMapping: undefined,
   assets: {
-    'index.csr.html': {size: 6152, hash: '8dee6968cb30d5ed007e77e538a6024db360aa06bf6867cd843d6f91f06561b0', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 1168, hash: '2cd396843cd14461d11c2238d0e3f9ee63fc50f7b898da4878474cd3fbf09269', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'create-hotel/index.html': {size: 18884, hash: '7637cbf3da0f571a5179737a2c6d7b85ada19534d03a6b8067f3144b608fc5c9', text: () => import('./assets-chunks/create-hotel_index_html.mjs').then(m => m.default)},
-    'hotels/index.html': {size: 34411, hash: '0f20c4d09a2441459336eb7d945b8b19f96038d70dd3ae2b94b66c169a12f175', text: () => import('./assets-chunks/hotels_index_html.mjs').then(m => m.default)},
-    'dashboard/index.html': {size: 26783, hash: '470e9b12a8e8c734aaa1d2b4f90f54a447ff8ee03f5caa5ea903cefd44d96a48', text: () => import('./assets-chunks/dashboard_index_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 6152, hash: 'b1ebd4d769a34bef56463c293e0773fb98fbf6f2e11f40bba3bf2d619a2798e0', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 1168, hash: 'd21b35bd9549b56ac08d58b42576dfbd309ef4247e743ca63eb2972a62b2939f', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'create-hotel/index.html': {size: 18884, hash: 'b1929947503c37c5720b024d557d4b2372cad33149dc95b2c69f705d2867112c', text: () => import('./assets-chunks/create-hotel_index_html.mjs').then(m => m.default)},
+    'dashboard/index.html': {size: 26783, hash: '0824600924ba75a5f8b2d0fb4b5fb2154ff57e4908bbf06de40e6ef465aa607a', text: () => import('./assets-chunks/dashboard_index_html.mjs').then(m => m.default)},
+    'hotels/index.html': {size: 34411, hash: 'ff8129ad86a240daac6f64ea1923ca747292d82a8d9b2545dacae9fb6bf7fcba', text: () => import('./assets-chunks/hotels_index_html.mjs').then(m => m.default)},
     'styles-K4B74LV3.css': {size: 304573, hash: 'fYjp0Co/stQ', text: () => import('./assets-chunks/styles-K4B74LV3_css.mjs').then(m => m.default)}
   },
 };
