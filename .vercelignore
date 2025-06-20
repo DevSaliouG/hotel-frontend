@@ -5,7 +5,6 @@
 !/package.json
 !/package-lock.json
 !/angular.json
-!/tsconfig.json
 !/src
 !/node_modules
 
