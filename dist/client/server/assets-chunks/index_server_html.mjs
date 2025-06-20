@@ -12,6 +12,6 @@ export default `<html lang="fr">
 </script>
   <app-root></app-root>
  
-<script src="main-534NCBQV.js" type="module"></script></body>
+<script src="main-7UECTMWY.js" type="module"></script></body>
 </html>
 `;

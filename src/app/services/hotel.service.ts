@@ -9,7 +9,7 @@ import { Observable, catchError, throwError } from 'rxjs';
   providedIn: 'root'
 })
 export class HotelService {
-  private apiUrl = 'https://hotel-backend-pely.onrender.com';
+  private apiUrl = 'http://localhost:3000/api/hotels';
   
 
   constructor(private http: HttpClient) { }
